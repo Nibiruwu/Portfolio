@@ -32,22 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (targetId === 'display-amv') {
                     // AMV/Edits
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
                         url('assets/bg-amv.png')`;
                 } else if (targetId === 'display-1') {
                     // Game Projects
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
                         url('assets/bg-work-new.png')`;
                 } else if (targetId === 'display-2') {
                     // 2D Illustrations (Artworks)
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
                         url('assets/bg-illustration.png')`;
                 } else if (targetId === 'display-3') {
                     // Animations
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
                         url('assets/bg-animation.png')`;
                 }
             }
