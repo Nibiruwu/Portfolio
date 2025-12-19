@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibiru | Artz</title>
+    <meta name="description" content="Portfolio of an artist specializing in illustration, 3d rigging, and animation.">
+
+    <link rel="icon" type="image/png" href="assets/Nbruuu zoom nbr 150px.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Moved to root for z-index safety) -->
+    <nav class="glass-nav">
+        <div class="logo">Nibiru's Portfolio</div>
+        <div class="nav-links">
+            <a href="#about" class="active">Profile</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header / About Me Section -->
+    <header id="about" class="parallax-section">
+        <div class="parallax-bg" id="bg-about"></div>
+        <div class="section-container">
+            <!-- Nav removed from here -->
+
+            <div class="about-content">
+                <div class="about-text">
+
+                    <h1><span class="gradient-text">Nibiru</span></h1>
+                    <p>
+                        I began my journey as an Editor, which ignited my passion and interest to 3d VFX. It led me to
+                        starting study illustration, 3d modeling, rigging, and animation harder.
+                    </p>
+                    <p>
+                        My role in Game Development is a 3d character animator. In several small teams, I often draw
+                        the concept and design for the character.
+                    </p>
+                    <p>
+                        I am passionate about creating lively animation and continuously seek to improve my skills.
+                    </p>
+                    <div class="cta-group">
+                        <a href="https://linktr.ee/nib1ruuu" class="btn btn-primary" target="_blank">Links</a>
+                        <a href="https://nib1ruuu.itch.io" class="btn btn-secondary" target="_blank">Itch.io</a>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <!-- Profile Picture -->
+                    <img src="assets/Nbruuu zoom nbr.png" alt="Nabil Yusrizal" class="profile-pic"
+                        style="width: 85%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: block; margin: 0 auto;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main / Interactive Display Section -->
+    <main id="work" class="parallax-section">
+        <div class="parallax-bg" id="bg-work"></div>
+        <div class="section-container">
+            <div class="display-header">
+                <h2>Featured Work</h2>
+                <p>Select a category to explore</p>
+            </div>
+
+            <div class="interactive-display">
+                <!-- Controls -->
+                <div class="display-controls">
+                    <button class="control-btn active" data-target="display-1">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Game Projects</span>
+                    </button>
+                    <button class="control-btn" data-target="display-2">
+                        <i class="fa-solid fa-paint-brush"></i>
+                        <span>2D Illustrations</span>
+                    </button>
+                    <button class="control-btn" data-target="display-3">
+                        <i class="fa-solid fa-film"></i>
+                        <span>Animations</span>
+                    </button>
+                </div>
+
+                <!-- Content Area -->
+                <div class="display-stage">
+
+                    <!-- Display 1: Game Projects -->
+                    <div class="display-item active" id="display-1">
+
+                        <!-- Crogue -->
+                        <div class="game-hero reverse">
+                            <div class="game-info">
+                                <h3>Crogue</h3>
+                                <p>Crogue is a Hack and Slash, Rogue-like game. Players must clear every area in
+                                    the dungeon till the last.</p>
+                                <p>In this project, I contributed as an opening illustrator and animator, 3d character
+                                    modeler, rigger, and animator.</p>
+                                <a href="https://doniahmad.itch.io/crogue-demo" target="_blank"
+                                    class="btn btn-white">Itch.io <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <!-- Video on Right -->
+                            <div class="game-image-container video-container">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Mdj6q2DROvo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Sketchfab Gallery Section -->
+                        <div class="sketchfab-gallery">
+                            <h4>Characters Collection</h4>
+                            <div class="gallery-grid">
+                                <div class="gallery-item" data-link="https://skfb.ly/pyrEx">
+                                    <img src="assets/Galleries/Crogue/Bas Preview 2.png" alt="Bas"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/pyrET">
+                                    <img src="assets/Galleries/Crogue/Musmur Preview 2.png" alt="Musmur"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/py87S">
+                                    <img src="assets/Galleries/Crogue/Roxk Preview 2.png" alt="Roxk"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/py8qw">
+                                    <img src="assets/Galleries/Crogue/Golem Preview 2.png" alt="Golem"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="project-divider">
+
+                        <!-- Featured Game Project -->
+                        <div class="game-hero">
+                            <div class="game-image-container">
+                                <!-- Actual Image -->
+                                <img src="assets/wayoflif5.png" alt="Way of Life Gameplay"
+                                    style="width: 100%; height: auto; display: block;">
+                            </div>
+                            <div class="game-info">
+                                <h3>Way of Life</h3>
+                                <p>Way of Life is a game project to participate in Gamejam+ 2025.</p>
+                                <p>In this project, I contribute to modeling the 3d character, rigging it, and animating
+                                    it.
+                                </p>
+                                <a href="https://muhammadandraramadhani.itch.io/wof" target="_blank"
+                                    class="btn btn-white">Itch.io <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- Sketchfab Gallery Section -->
+                        <div class="sketchfab-gallery">
+                            <h4>Moe - Kano</h4>
+                            <div class="gallery-grid">
+                                <div class="gallery-item" data-link="https://skfb.ly/pDXNq">
+                                    <img src="assets/Galleries/Wayoflife/Moe600.gif" alt="Moe"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/pDXNu">
+                                    <img src="assets/Galleries/Wayoflife/Kano600.gif" alt="Kano"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="project-divider">
+
+                        <!-- Bump Bash Arena -->
+                        <div class="game-hero reverse">
+                            <div class="game-info">
+                                <h3>Bump Bash Arena</h3>
+                                <p>Bump Bash Arena is a game jam project. The gameplay feels like Rocket League, but the
+                                    cars have a gun.</p>
+                                <p>In this project, I created the 3d car models.</p>
+                                <a href="https://doniahmad.itch.io/bump-bash-arena" target="_blank"
+                                    class="btn btn-white">Itch.io <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="game-image-container">
+                                <img src="assets/BBArenaBanner.png" alt="Bump Bash Arena"
+                                    style="width: 100%; height: auto; display: block;">
+                            </div>
+                        </div>
+                        <div class="sketchfab-gallery">
+                            <h4>The 4 Cars</h4>
+                            <div class="gallery-grid">
+                                <div class="gallery-item" data-link="https://skfb.ly/pAEnA">
+                                    <img src="assets/Galleries/BumpBashArena/ca1.png" alt="Car 1"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/pAEnM">
+                                    <img src="assets/Galleries/BumpBashArena/ca2.png" alt="Car 2"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/pAEnT">
+                                    <img src="assets/Galleries/BumpBashArena/ca3.png" alt="Car 3"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/pAE6s">
+                                    <img src="assets/Galleries/BumpBashArena/ca4.png" alt="Car 4"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="project-divider">
+
+                        <!-- Melody Beat -->
+                        <div class="game-hero">
+                            <div class="game-image-container">
+                                <img src="assets/OUT! finalz.png" alt="Melody Beat"
+                                    style="width: 100%; height: auto; display: block;">
+                            </div>
+                            <div class="game-info">
+                                <h3>Melody Beat</h3>
+                                <p>Rhythm pixel art game with simple controls.</p>
+                                <p>In this project, I contributed to creating all the assets with a pixel art style.</p>
+                                <a href="https://doniahmad.itch.io/melody-beat" target="_blank"
+                                    class="btn btn-white">Itch.io <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="sketchfab-gallery">
+                            <h4>Melody Beat Character Animations</h4>
+                            <div class="gallery-grid">
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/Idle.gif" alt="Idle"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/Hitlong.gif" alt="Hitlong"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/HitRight1.gif" alt="HitRight1"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/HitRight2.gif" alt="HitRight2"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/HitRight3.gif" alt="HitRight3"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/HitRight4.gif" alt="HitRight4"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="assets/Galleries/MelodyBeat/HitRight5.gif" alt="HitRight5"
+                                        style="width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="project-divider">
+
+                        <!-- An Eye -->
+                        <div class="game-hero reverse">
+                            <div class="game-info">
+                                <h3>An Eye</h3>
+                                <p>In this project, I worked on the Opening Animation, Main Menu Art, and created 2
+                                    characters for the game.</p>
+                                <a href="https://doniahmad.itch.io/an-eye" target="_blank" class="btn btn-white">Itch.io
+                                    <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <!-- Video on Right -->
+                            <div class="game-image-container video-container">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/HkSTOsUsGC0"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="sketchfab-gallery">
+                            <h4>Main Menu Art & Characters</h4>
+                            <div class="an-eye-grid">
+                                <div class="gallery-item main-art">
+                                    <img src="assets/Galleries/AnEye/new.png" alt="Main Menu Art"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/px7qv">
+                                    <img src="assets/Galleries/AnEye/Hasan_T-Pose 2mb.png" alt="Hasan"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="gallery-item" data-link="https://skfb.ly/oWQrH">
+                                    <img src="assets/Galleries/AnEye/Yusuf_T-Pose 2mb.png" alt="Yusuf"
+                                        style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display 2: 2D Illustrations -->
+                    <div class="display-item" id="display-2">
+                        <div class="gallery-grid full-grid">
+                            <!-- Artwork 1 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/Ambriel in Combat FINAL.png"
+                                data-link="https://www.pixiv.net/en/artworks/135398329" data-title="Ambriel in Combat">
+                                <img src="assets/Illustrations/Previews/Ambriel in Combat 2mb.png"
+                                    alt="Ambriel in Combat" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 2 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/start of the end¿ FINAL.png"
+                                data-link="https://www.pixiv.net/en/artworks/134331189" data-title="start of the end¿">
+                                <img src="assets/Illustrations/Previews/start of the end¿ 2mb.png"
+                                    alt="Start of the End" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 3 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/neo blazt! FINAL.png"
+                                data-link="https://www.pixiv.net/en/artworks/133680938" data-title="neo blazt!">
+                                <img src="assets/Illustrations/Previews/neo blazt! 2mb.png" alt="Neo Blazt"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 4 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/Yoru Final.png"
+                                data-link="https://www.pixiv.net/en/artworks/133259814" data-title="Yoru">
+                                <img src="assets/Illustrations/Previews/Yoru 2mb.png" alt="Yoru"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 5 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/Next Area_Finalz.png"
+                                data-link="https://youtu.be/Y5YkJIUQlGw?si=Rx-F1OkcC7YNPJCT" data-title="Next Area">
+                                <img src="assets/Illustrations/Previews/Next Area_3840 8bit.png" alt="Next Area"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 6 -->
+                            <div class="gallery-item"
+                                data-full-img="assets/Illustrations/Alicia Ravenna art contest april 2025 (2) FINAL.png"
+                                data-link="https://www.pixiv.net/en/artworks/130567099" data-title="Date?">
+                                <img src="assets/Illustrations/Previews/Alicia Ravenna art contest april 2025 2mb.png"
+                                    alt="Alicia Ravenna" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <!-- Artwork 7 -->
+                            <div class="gallery-item" data-full-img="assets/Illustrations/Dust Final.png"
+                                data-link="https://www.pixiv.net/en/artworks/127229973" data-title="Dust">
+                                <img src="assets/Illustrations/Previews/Dust 2mb.png" alt="Dust"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display 3: Animations -->
+                    <div class="display-item" id="display-3">
+                        <h4 style="text-align:center; color:white; margin: 2rem 0 1rem;">Horizontal</h4>
+                        <div class="gallery-grid full-grid">
+                            <!-- Standard Videos -->
+                            <div class="gallery-item aspect-16-9" data-video="5fUra0OmE2U">
+                                <img src="https://img.youtube.com/vi/5fUra0OmE2U/maxresdefault.jpg" alt="Video 1"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="Mdj6q2DROvo">
+                                <img src="https://img.youtube.com/vi/Mdj6q2DROvo/maxresdefault.jpg" alt="Video 2"
+                                    style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.35);">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="HkSTOsUsGC0">
+                                <img src="https://img.youtube.com/vi/HkSTOsUsGC0/maxresdefault.jpg" alt="Video 3"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="NPiJKFFgKhs">
+                                <img src="https://img.youtube.com/vi/NPiJKFFgKhs/hqdefault.jpg" alt="Video 5"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="Y5YkJIUQlGw">
+                                <img src="assets/NextAreaFinalz.png" alt="Video 6"
+                                    style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.35);">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="5xha7YItmDY">
+                                <img src="https://img.youtube.com/vi/5xha7YItmDY/maxresdefault.jpg" alt="Video 7"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="hJLi3vJxxtI">
+                                <img src="https://img.youtube.com/vi/hJLi3vJxxtI/hqdefault.jpg" alt="Video 8"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+
+                        <h4 style="text-align:center; color:white; margin: 3rem 0 1rem;">Vertical</h4>
+                        <div class="gallery-grid full-grid">
+                            <!-- Shorts -->
+                            <div class="gallery-item aspect-9-16" data-video="ZdXwEkvcvJ8">
+                                <img src="https://img.youtube.com/vi/ZdXwEkvcvJ8/maxresdefault.jpg"
+                                    alt="Video 4 (Short)" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-9-16" data-video="r6LqKdomOzY">
+                                <img src="https://img.youtube.com/vi/r6LqKdomOzY/maxresdefault.jpg"
+                                    alt="Video 9 (Short)" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-cta">
+                <h2>Thank you for taking the time to review my work;<br>I'm eager to connect and collaborate further.
+                </h2>
+                <div class="social-links">
+                    <!-- LinkedIn -->
+
+                    <!-- Sketchfab -->
+                    <a href="https://sketchfab.com/nib1ruuu" target="_blank" title="Sketchfab"><i
+                            class="fa-solid fa-cube"></i></a>
+                    <!-- Pixiv -->
+                    <a href="https://www.pixiv.net/en/users/111285688" target="_blank" title="Pixiv"><i
+                            class="fa-solid fa-paintbrush"></i></a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/nib1ruuu/" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <!-- X/Twitter (Switched to Twitter icon for visibility/compatibility) -->
+                    <a href="https://x.com/@nib1ruuu" target="_blank" title="X (Twitter)"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@nib1ruuu" target="_blank" title="YouTube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <!-- Contact Links (Row 2) -->
+                <div class="contact-links">
+                    <!-- Email -->
+                    <a href="mailto:nblyzl2208@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <!-- WhatsApp -->
+
+                </div>
+
+                <p>&copy; 2025 nib1ruuu. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
