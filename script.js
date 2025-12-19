@@ -29,7 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Dynamic Background Switching
             const workBg = document.getElementById('bg-work');
             if (workBg) {
-                if (targetId === 'display-1') {
+                if (targetId === 'display-amv') {
+                    // AMV/Edits
+                    workBg.style.backgroundImage = `
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
+                        url('assets/bg-amv.png')`;
+                } else if (targetId === 'display-1') {
                     // Game Projects
                     workBg.style.backgroundImage = `
                         linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
@@ -37,12 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (targetId === 'display-2') {
                     // 2D Illustrations (Artworks)
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.95)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
                         url('assets/bg-illustration.png')`;
                 } else if (targetId === 'display-3') {
                     // Animations
                     workBg.style.backgroundImage = `
-                        linear-gradient(to bottom, rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.95)), 
+                        linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.2)), 
                         url('assets/bg-animation.png')`;
                 }
             }

@@ -77,7 +77,11 @@
             <div class="interactive-display">
                 <!-- Controls -->
                 <div class="display-controls">
-                    <button class="control-btn active" data-target="display-1">
+                    <button class="control-btn active" data-target="display-amv">
+                        <i class="fa-solid fa-video"></i>
+                        <span>AMV/Edits</span>
+                    </button>
+                    <button class="control-btn" data-target="display-1">
                         <i class="fa-solid fa-gamepad"></i>
                         <span>Game Projects</span>
                     </button>
@@ -94,8 +98,55 @@
                 <!-- Content Area -->
                 <div class="display-stage">
 
+                    <!-- Display AMV: AMV/Edits -->
+                    <div class="display-item active" id="display-amv">
+                        <h4 style="text-align:center; color:white; margin: 2rem 0 1rem;">Horizontal</h4>
+                        <div class="gallery-grid full-grid">
+                            <div class="gallery-item aspect-16-9" data-video="FwUukKYieoc">
+                                <img src="https://img.youtube.com/vi/FwUukKYieoc/maxresdefault.jpg" alt="AMV 1"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="5xha7YItmDY">
+                                <img src="https://img.youtube.com/vi/5xha7YItmDY/maxresdefault.jpg" alt="AMV 2"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="afL_NvsNER0">
+                                <img src="https://img.youtube.com/vi/afL_NvsNER0/maxresdefault.jpg" alt="AMV 3"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="O1xfO5v05rE">
+                                <img src="https://img.youtube.com/vi/O1xfO5v05rE/maxresdefault.jpg" alt="AMV 4"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="bhUBFwb7H0U">
+                                <img src="https://img.youtube.com/vi/bhUBFwb7H0U/maxresdefault.jpg" alt="AMV 5"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-16-9" data-video="tlVr_82H9Tk">
+                                <img src="https://img.youtube.com/vi/tlVr_82H9Tk/maxresdefault.jpg" alt="AMV 6"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+
+                        <h4 style="text-align:center; color:white; margin: 3rem 0 1rem;">Vertical</h4>
+                        <div class="gallery-grid full-grid">
+                            <div class="gallery-item aspect-9-16" data-video="ruFbiPNKiF8">
+                                <img src="https://img.youtube.com/vi/ruFbiPNKiF8/maxresdefault.jpg" alt="Short 1"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-9-16" data-video="o0Qc34_dh5k">
+                                <img src="https://img.youtube.com/vi/o0Qc34_dh5k/maxresdefault.jpg" alt="Short 2"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="gallery-item aspect-9-16" data-video="0faZOdgu_MU">
+                                <img src="https://img.youtube.com/vi/0faZOdgu_MU/hqdefault.jpg" alt="Short 3"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Display 1: Game Projects -->
-                    <div class="display-item active" id="display-1">
+                    <div class="display-item" id="display-1">
 
                         <!-- Crogue -->
                         <div class="game-hero reverse">
