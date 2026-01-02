@@ -5,6 +5,17 @@
     --text-secondary: #c5c6c7;
     --accent-color: #c3fffb;
     --accent-hover: #63adaa;
+
+    /* Section Specific Colors */
+    --color-amv: #ff9bd4;
+    /* Magenta */
+    --color-games: #ff9c9c;
+    /* Red */
+    --color-art: #c3fffb;
+    /* Teal (Original) */
+    --color-animations: #ffd29a;
+    /* Orange */
+
     --glass-bg: rgba(31, 40, 51, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
 
@@ -285,6 +296,27 @@ h4 {
     background-color: var(--accent-color);
     color: var(--bg-color);
     box-shadow: 0 4px 15px rgba(102, 252, 241, 0.4);
+}
+
+/* Section Specific Control Button Colors */
+.control-btn[data-target="display-amv"].active {
+    background-color: var(--color-amv);
+    box-shadow: 0 4px 15px rgba(255, 155, 212, 0.4);
+}
+
+.control-btn[data-target="display-1"].active {
+    background-color: var(--color-games);
+    box-shadow: 0 4px 15px rgba(255, 156, 156, 0.4);
+}
+
+.control-btn[data-target="display-2"].active {
+    background-color: var(--color-art);
+    box-shadow: 0 4px 15px rgba(102, 252, 241, 0.4);
+}
+
+.control-btn[data-target="display-3"].active {
+    background-color: var(--color-animations);
+    box-shadow: 0 4px 15px rgba(255, 210, 154, 0.4);
 }
 
 .display-stage {
@@ -620,6 +652,16 @@ footer {
 .btn-white:hover {
     background-color: #e0e0e0;
     transform: translateX(5px);
+}
+
+/* Section Specific Internal Buttons */
+#display-1 .btn-white {
+    background-color: var(--color-games);
+    color: white;
+}
+
+#display-1 .btn-white:hover {
+    background-color: #ff5c5b;
 }
 
 /* Sketchfab Gallery & Grids */
