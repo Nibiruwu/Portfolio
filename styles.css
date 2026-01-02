@@ -822,6 +822,23 @@ footer {
     border-color: var(--accent-color);
 }
 
+/* Section Specific Gallery Item Hover Colors */
+#display-amv .gallery-item:hover {
+    border-color: var(--color-amv);
+}
+
+#display-1 .gallery-item:hover {
+    border-color: var(--color-games);
+}
+
+#display-2 .gallery-item:hover {
+    border-color: var(--color-art);
+}
+
+#display-3 .gallery-item:hover {
+    border-color: var(--color-animations);
+}
+
 /* Aspect Ratio Modifiers */
 .gallery-item.aspect-16-9 {
     aspect-ratio: 16 / 9;
