@@ -946,7 +946,7 @@ footer {
     /* Slideable & Sticky Portfolio Options */
     .interactive-display {
         width: 100vw;
-        margin-left: -5%;
+        margin-left: -5.5%;
         /* Counteract section padding to use full width */
         padding: 0 5%;
         position: relative;
@@ -976,8 +976,8 @@ footer {
         border-bottom: 1px solid var(--glass-border);
         margin-bottom: 2rem;
 
-        /* Padding kiri kanan kontainer */
-        padding: 1rem 0.5rem;
+        /* Padding atas bawah kanan kiri kontainer */
+        padding: 0.5rem 0.5rem;
         
         /* Scroll Padding: Biar snap-nya gak mepet pinggir layar banget */
         scroll-padding-inline: 0.5rem;
