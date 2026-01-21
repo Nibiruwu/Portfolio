@@ -960,32 +960,29 @@ footer {
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
-        /* Reverted to flex-start for scrolling */
-        padding: 1rem 0.5rem;
-        /* Reduced horizontal padding */
-        gap: 0.5rem;
-        /* Tighter gap */
+        
+        /* WAJIB ADA: Gap ini pasangan hidupnya rumus calc di bawah */
+        gap: 0.5rem; 
+        
         width: 100%;
-        max-width: 100vw;
-
-        /* Sticky Position */
+        
+        /* Sticky dll */
         position: sticky;
         top: 60px;
-        /* Adjust based on Nav height */
         z-index: 800;
-
-        /* Visual tweaks */
-        border-radius: 30px;
-        /* Reduced radius as requested */
-        border-bottom: 1px solid var(--glass-border);
         background: rgba(23, 26, 29, 0.95);
         backdrop-filter: blur(10px);
+        border-radius: 30px;
+        border-bottom: 1px solid var(--glass-border);
         margin-bottom: 2rem;
 
-        /* Scroll Snap Logic */
+        /* Padding kiri kanan kontainer */
+        padding: 1rem 0.5rem;
+        
+        /* Scroll Padding: Biar snap-nya gak mepet pinggir layar banget */
+        scroll-padding-inline: 0.5rem;
+        
         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
     }
 
     .display-controls::-webkit-scrollbar {
@@ -993,18 +990,53 @@ footer {
     }
 
     .control-btn {
-        flex: 0 0 calc(50% - 0.5rem);
-        /* Strictly 2 items per view minus gap */
-        width: calc(50% - 0.5rem);
-        white-space: nowrap;
-        font-size: 0.85rem;
-        /* Slightly smaller to ensure fit */
-        padding: 0.8rem 0;
-        /* Remove side padding to rely on flex center */
-        justify-content: center;
-        /* Center text/icon */
+        /* RUMUS MURNI: 50% area - setengah gap (0.25rem) */
+        /* HAPUS '+ 2px' biar gak kegedean */
+        flex: 0 0 calc(50% - 0.25rem);
+        
+        /* KEMBALIKAN KE START */
+        /* Kita pakai start semua biar item 3 & 4 tetap 'sebaris' rapi */
         scroll-snap-align: start;
-        /* Snap to start */
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    /* --- GANTI TEKS MENU KHUSUS MOBILE --- */
+    
+    /* 1. Sembunyikan teks asli (yang ada di dalam span) */
+    .control-btn span {
+        display: none;
+    }
+
+    /* 2. Siapkan pseudo-element ::after sebagai pengganti teks */
+    .control-btn::after {
+        font-size: 0.9rem; /* Samakan ukuran font */
+        /* display: block; -> Gak perlu karena parentnya flex */
+    }
+
+    /* 3. Isi konten teks baru sesuai target tombolnya */
+    
+    /* AMV/Edits -> Edits */
+    .control-btn[data-target="display-amv"]::after {
+        content: "Edits";
+    }
+
+    /* Game Projects -> Games */
+    .control-btn[data-target="display-1"]::after {
+        content: "Games";
+    }
+
+    /* 2D Illustrations -> Illustrations */
+    .control-btn[data-target="display-2"]::after {
+        content: "Illustrations";
+    }
+
+    /* Animations -> Animations (Biar konsisten tekniknya) */
+    .control-btn[data-target="display-3"]::after {
+        content: "Animations";
     }
 
     /* Scale Down Social Links */
