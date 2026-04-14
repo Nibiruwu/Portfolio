@@ -33,22 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     // AMV/Edits
                     workBg.style.backgroundImage = `
                         linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
-                        url('assets/bg-amv.png')`;
+                        url('assets/bg-amv.webp')`;
                 } else if (targetId === 'display-1') {
                     // Game Projects
                     workBg.style.backgroundImage = `
                         linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
-                        url('assets/bg-work-new.png')`;
+                        url('assets/bg-work-new.webp')`;
                 } else if (targetId === 'display-2') {
                     // 2D Illustrations (Artworks)
                     workBg.style.backgroundImage = `
                         linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
-                        url('assets/bg-illustration.png')`;
+                        url('assets/bg-illustration.webp')`;
                 } else if (targetId === 'display-3') {
                     // Animations
                     workBg.style.backgroundImage = `
                         linear-gradient(to bottom, rgba(11, 12, 16, 0.2), rgba(11, 12, 16, 0.4)), 
-                        url('assets/bg-animation.png')`;
+                        url('assets/bg-animation.webp')`;
                 }
             }
         });
